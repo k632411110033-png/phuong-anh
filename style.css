@@ -585,6 +585,18 @@ a {
     box-shadow: var(--shadow-hover);
 }
 
+.project-card:focus-visible {
+    outline: 3px solid var(--primary-light);
+    outline-offset: 5px;
+}
+
+.project-chart-link {
+    display: inline-block;
+    margin-top: 1.25rem;
+    color: var(--primary-light);
+    font-weight: 600;
+}
+
 .project-img-wrapper {
     height: 200px;
     background: rgba(255,255,255,0.9); /* Keep white for stock logos to be readable */
@@ -721,6 +733,17 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .container, .hero-content { padding-left: 1.25rem; padding-right: 1.25rem; }
+    .academics-hero { padding: 1.25rem; gap: 1.5rem; }
+    .cfa-showcase { min-width: 0; width: 100%; padding: 1.25rem; }
+    .cfa-text h3 { white-space: normal; font-size: 1.75rem; }
+    .university-stats { width: 100%; gap: 1rem; }
+    .projects-grid { grid-template-columns: minmax(0, 1fr); }
+    .hero-actions { flex-wrap: wrap; }
+    .contact-link { overflow-wrap: anywhere; min-width: 0; padding: 1rem; }
+    .contact-link svg { flex-shrink: 0; }
+    .timeline-item { padding-left: 40px; }
+    .timeline-content { padding: 1.25rem; }
     .title { font-size: 2.5rem; }
     .hero-image { width: 300px; height: 300px; }
     .cfa-showcase { flex-direction: column; text-align: center; }
