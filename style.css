@@ -401,6 +401,37 @@ a {
     white-space: normal;
 }
 
+.cfa-credential-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 44px;
+    max-width: 100%;
+    margin-top: 1.25rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid rgba(155, 139, 244, 0.45);
+    border-radius: 999px;
+    background: rgba(155, 139, 244, 0.08);
+    color: var(--primary-light);
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.cfa-credential-link svg {
+    flex-shrink: 0;
+}
+
+.cfa-credential-link:hover {
+    background: rgba(155, 139, 244, 0.2);
+    border-color: var(--primary);
+}
+
+.cfa-credential-link:focus-visible {
+    outline: 2px solid var(--primary-light);
+    outline-offset: 4px;
+}
 .university-stats {
     display: flex;
     gap: 2rem;
